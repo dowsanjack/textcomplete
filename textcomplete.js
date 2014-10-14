@@ -641,7 +641,7 @@ if (typeof jQuery === 'undefined') {
         position = {
           top: 'auto',
           bottom: this.$el.parent().height() - (position.top) + _offset,
-          left: position.left - this.$el.siblings("textarea").offset().top
+          left: position.left - this.$el.siblings("textarea").offset().left
         };
       } else {
         position.bottom = 'auto';
