@@ -1,0 +1,12 @@
+{
+  "name": "textcomplete",
+  "version": "0.0.1",
+  "main": "textcomplete.js",
+  "dependencies": {
+    "jquery": ">=1.7.0"
+  },
+  "authors": [
+    "XXX"
+  ],
+  "license": "MIT
+}
