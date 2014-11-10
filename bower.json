@@ -1,6 +1,6 @@
 {
   "name": "textcomplete",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "textcomplete.js",
   "dependencies": {
     "jquery": ">=1.7.0"

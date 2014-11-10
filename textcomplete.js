@@ -637,11 +637,11 @@ if (typeof jQuery === 'undefined') {
       // If the 'placement' option set to 'top', move the position above the element.
       if (this.placement.indexOf('top') !== -1) {
         // Overwrite the position object to set the 'bottom' property instead of the top.
-        var _offset = this.$el.siblings("textarea").offset().top;
+        var _offset = this.$el.siblings("div").offset().top;
         position = {
           top: 'auto',
           bottom: this.$el.parent().height() - (position.top) + _offset,
-          left: position.left - this.$el.siblings("textarea").offset().left
+          left: position.left - this.$el.siblings("div").offset().left
         };
       } else {
         position.bottom = 'auto';
