@@ -179,6 +179,18 @@ if (typeof jQuery === 'undefined') {
       this.$el = this.adapter = this.dropdown = null;
     },
 
+    updateMentions: function(newMentions, keyValue){
+      var strategy = this.strategies[0];
+      strategy.mentions = newMentions;
+      strategy.template = function(value) {
+        if (value && keyValue && keyValue[value]) {
+          return value + ' ' + '<small>' + keyValue[value] + '</small>';
+        } else {
+          return value;
+        }
+      }    
+    },
+
     // Invoke textcomplete.
     trigger: function (text, skipUnchangedTerm) {
       if (!this.dropdown) { this.initialize(); }
